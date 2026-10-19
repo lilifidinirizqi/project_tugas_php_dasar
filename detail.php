@@ -36,10 +36,13 @@ $status = $_GET["status"];
             background-color: #21191D;
             color: #FFF1F6;
             font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         h2 {
-            color: #F6C4D7;
+            color: #921039;
             text-align: center;
             margin-bottom: 30px;
         }
@@ -75,21 +78,36 @@ $status = $_GET["status"];
         a:hover {
             background-color: #F6C4D7;
         }
+
+        .container{
+            padding: 20px;
+            width: fit-content;
+            margin: auto;
+            background-color: #fac0d8;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     </style>
 
 </head>
 <body>
-    <h2>Detail Mahasiswa</h2>
+    <div class="container">
+        <h2>Detail Mahasiswa</h2>
 
-<div class="kartu">
-    <p>NIM: <?php echo $nim; ?></p>
-    <p>Nama: <?php echo $nama; ?></p>
-    <p>Jurusan: <?php echo $jurusan; ?></p>
-    <p>Email: <?php echo $email; ?></p>
-    <p>Nilai: <?php echo $nilai; ?></p>
-    <p>Grade: <?php echo $grade; ?></p>
-    <p>Status: <?php echo $status; ?></p>
-</div>
-<a href="index.php">Kembali</a>
+        <div class="kartu">
+            <p>NIM: <?php echo $nim; ?></p>
+            <p>Nama: <?php echo $nama; ?></p>
+            <p>Jurusan: <?php echo $jurusan; ?></p>
+            <p>Email: <?php echo $email; ?></p>
+            <p>Nilai: <?php echo $nilai; ?></p>
+            <p>Grade: <?php echo $grade; ?></p>
+            <p>Status: <?php echo $status; ?></p>
+        </div>
+
+        <a href="index.php">Kembali</a>
+    </div>
 </body>
 </html>

@@ -54,21 +54,22 @@ $mahasiswa = [
 
     <style>
         body {
-            margin: 0;
+            margin: auto;
             padding: 35px;
             background-color: #21191D;
             color: #F8EDF2;
             font-family: Arial, sans-serif;
+            display: flex;
         }
 
         h1 {
-            color: #F2C6D4;
+            color: #921039;
             text-align: center;
             margin-bottom: 10px;
         }
 
         h4 {
-            color: #F2C6D4;
+            color: #921039;
             text-align : center;
             margin-bottom: 30px;
         }
@@ -129,6 +130,7 @@ $mahasiswa = [
             font-size: 13px;
             font-weight: bold;
             transition: 0.2s;
+            margin: 10px 0px;
         }
 
         a:hover {
@@ -140,11 +142,23 @@ $mahasiswa = [
             margin-top: 24px;
             padding: 12px 20px;
         }
+
+        .container{
+            padding: 20px;
+            width: fit-content;
+            margin: auto;
+            background-color: #fac0d8;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     </style>
 
 </head>
 <body>
-
+<div class="container">
     <h1>Daftar Mahasiswa</h1>
     <h4>Mini Website PHP Dasar</h4>
 
@@ -211,5 +225,6 @@ $mahasiswa = [
 </table>
 
     <a href="form_pesan.php">Kesan dan Pesan</a>
+    </div>
 </body>
 </html>

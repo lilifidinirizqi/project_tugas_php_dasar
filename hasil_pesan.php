@@ -40,13 +40,13 @@ $kesan_pesan = $_POST["kesan_pesan"];
         }
 
         h3 {
-            color: #D95F91;
+            color: #fff1f6;
             text-align: center;
             margin-top: 0;
         }
 
         h4 {
-            color: #F6C4D7;
+            color: #fff1f6;
             text-align: center;
             margin-bottom: 25px;
         }
@@ -74,19 +74,34 @@ $kesan_pesan = $_POST["kesan_pesan"];
         a:hover {
             background-color: #F6C4D7;
         }
+
+        .container{
+            padding: 20px;
+            width: fit-content;
+            margin: auto;
+            background-color: #fac0d8;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
     </style>
 
 </head>
 <body>
-    <div class="kartu">
-        <h3>Pesan Sudah Berhasil Terkirim!</h3>
-        <h4>Terima Kasih, <?php echo $nama_lengkap;?></h4>
+    <div class="container">
+        <div class="kartu">
+            <h3>Pesan Sudah Berhasil Terkirim!</h3>
+            <h4>Terima Kasih, <?php echo $nama_lengkap;?></h4>
 
-        <p>Nama Lengkap : <?php echo $nama_lengkap; ?></p>
-        <p>Kelas : <?php echo $kelas; ?></p>
-        <p>Kesan dan Pesan : <?php echo $kesan_pesan; ?></p>
+            <p>Nama Lengkap : <?php echo $nama_lengkap; ?></p>
+            <p>Kelas : <?php echo $kelas; ?></p>
+            <p>Kesan dan Pesan : <?php echo $kesan_pesan; ?></p>
 
-        <a href="index.php">Kembali ke Data Mahasiswa</a>
+            <a href="index.php">Kembali ke Data Mahasiswa</a>
+        </div>
     </div>
 </body>
 </html>
